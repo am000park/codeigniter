@@ -82,7 +82,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
 	</div>
 
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
+	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?>
 </div>
 
 <?php
@@ -105,10 +105,32 @@ function cut_str($str, $len, $suffix="…")
     }
 }
 
-echo cut_str("이거은 문자 테스트 길이 입니다.", "10");
+//echo cut_str("이거은 문자 테스트 길이 입니다.", "10");
+
 ?>
 
 <script type="text/javascript">
+
+function setCookie(name, value, day) {
+	var date = new Date();
+	date.setTime(date.getTime() + day * 60 * 60 * 24 * 1000);
+	document.cookie = name + '=' + value + '; expires=' + date.toUTCString() + '; path=/';
+}
+
+var getCookie = function(name) {
+	var value = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+	return value ? value[2] : null;
+}
+
+var deleteCookie = function(name) {
+	var date = new Date();
+	document.cookie = name + '= ' + '; expires='  + date.toUTCString() + '; path=/';
+}
+
+deleteCookie('테스트');
+
+console.log(document.cookie);
+
 /*	let string = "이거은 문자 테스트 길이 입니다.";
 	function cut_str(str, cutLength) {
 		//let strArr = str.split("");

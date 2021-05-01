@@ -1,0 +1,82 @@
+@font-face {
+	font-family: "gmakerSans";
+	src: url("/CodeIgniter/statis/font/GmarketSansMedium.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: gmakerSans;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body { background-color: #ddd; }
+
+/* button style */
+.btn { width: 100%; height: 40px; line-height: 40%; color: white; background-color: #79589f; 
+	border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-webkit-border-radius: 5px; }
+
+/* input box style */
+.full_input { width: 100%; }
+
+.frm_input { padding-left: 10px; height: 40px; line-height: 40px; border: 1px solid #aaa;
+	border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-webkit-border-radius: 5px; }
+
+#header { padding: 10px 0; background-color: skyblue; text-align: center; font-size: 2em; }
+
+#sms_acc_wrap { position: absolute; top: 50%; left: 50%; width: 80%; max-width: 500px; padding: 2em; transform: translate(-50%, -50%); background-color: #fff; box-sizing: border-box;
+	border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-webkit-border-radius: 5px; }
+#sms_acc_wrap > h1 { margin-bottom: 1em; text-align: center; font-size: 1.5em; font-weight: 900;; }
+#sms_acc_wrap input[name="hp"],
+#sms_acc_wrap #sms_send { margin-bottom: 1em; box-sizing: border-box; }
+#sms_acc_wrap #sms_number_box { display: none; }
