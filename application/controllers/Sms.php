@@ -5,20 +5,26 @@ class Sms extends CI_Controller {
 
 	public function __construct() {
 		parent::__construct();
-
+		
 		$this->load->helper('url');
 	}
-
+	
 	public function index() {
 		$this->load->view('header');
 		$this->load->view('sms');
 		$this->load->view('footer');
 	}
 
-	public function send($id) {
+	public function send() {
+		echo 'ddd';
+		//echo $this->input->is_ajax_request();
+		print_r($this->input->post("phone", true));
+		print_r($this->input->get("phone"));
+		//echo json_encode($_POST);
+		//echo json_encode($_GET);
+
 		$this->load->model('sms_user');
-		//print_r($_POST['hp']);
-		//$this->load->view('welcome');
+		$this->sms_user->insert_sms($_POST['hp']);
 	}
 
 }

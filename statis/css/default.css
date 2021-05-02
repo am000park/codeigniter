@@ -78,5 +78,6 @@ body { background-color: #ddd; }
 	-webkit-border-radius: 5px; }
 #sms_acc_wrap > h1 { margin-bottom: 1em; text-align: center; font-size: 1.5em; font-weight: 900;; }
 #sms_acc_wrap input[name="hp"],
+#sms_acc_wrap input[name="sms_number"],
 #sms_acc_wrap #sms_send { margin-bottom: 1em; box-sizing: border-box; }
 #sms_acc_wrap #sms_number_box { display: none; }
