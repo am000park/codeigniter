@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS  `ci_sessions` (
+CREATE TABLE IF NOT EXISTS  `ci_session` (
     session_id varchar(40) DEFAULT '0' NOT NULL,
     ip_address varchar(16) DEFAULT '0' NOT NULL,
     user_agent varchar(120) NOT NULL,
@@ -14,4 +14,4 @@ CREATE TABLE `sms_send` (
     `ss_hp` varchar(255) NOT NULL DEFAULT '' COMMENT '핸드폰 번호',
     `ss_create_date` datetime NOT NULL DEFAULT current_timestamp COMMENT '생성 일자',
     PRIMARY KEY(`ss_idx`)
-) ENGIN=Innodb DEFAULT CHARSET=utf8mb4
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT 'sms';
