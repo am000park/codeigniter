@@ -1,10 +1,10 @@
-<div id="sms_acc_wrap">
+<div id="sms_acc_wrap" class="modal">
     <h1>SMS 문자 인증</h1>
     <form name="smsAcc" id="smsAcc" method="post" action="<?php echo base_url('index.php/fax'); ?>">
-        <input type="text" name="phone" id="phone" class="frm_input full_input" pattern="/d*" placeholder="핸드폰번호">
+        <input type="text" name="phone" id="phone" class="frm_input full_input" pattern="\d*" placeholder="핸드폰번호">
         <button type="button" id="sms_send" class="btn">문자 전송</button>
         <div id="sms_number_box">
-            <input type="text" name="acc_number" id="acc_number" class="frm_input full_input" pattern="/d*" placeholder="인증번호">
+            <input type="text" name="acc_number" id="acc_number" class="frm_input full_input" pattern="\d*" placeholder="인증번호">
             <button type="button" id="sms_chk" class="btn">인증</button>
         </div>
     </form>
